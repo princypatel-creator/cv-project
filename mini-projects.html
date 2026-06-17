@@ -19,15 +19,16 @@
         .nav-links {
             list-style: none;
             display: flex;
-            gap: 25px;
+           gap:783px;
             align-items: center;
+            
         }
         .nav-item a {
             color: #e0f2f1;
             text-decoration: none;
             font-size: 1rem;
             font-weight: 500;
-        
+            font-size:35px;
             border-radius: 4px;
         
         }
@@ -49,6 +50,18 @@
             color:rgb(220, 240, 239);
             font-size:22px;
         }
+        video {
+            width: 90%;
+            border-radius: 8px;
+            margin-top: 15px;
+             padding:12px;
+            box-shadow: 1px 2px 8px rgba(71, 122, 109, 0.719);
+        }
+        @media screen and (min-width: 1024px) {
+  body { font-size: 44px; }
+  a{ font-size: 64px; }
+  .outcomes-links{ font-size:}
+}
  </style>
     </head>
  <body>
@@ -71,8 +84,31 @@
         <h2>In video Format</h2>
         <div class="videos-reult">
             <video controls>
-              <source src="My-cal-result.mp4" type="video/mp4"> 
+            <source src="My-cal-reult.mp4" type="video/mp4">
             </video>
+            <video controls>
+                <source src="my-video-2.mp4" type="video/mp4">
+            </video>
+        </div> 
+    </div>
+    
+    <div class="carousel-wrapper">
+        <a href="#slide-3" class="nav-btn prev">&#10094;</a>
+        <a href="#slide-2" class="nav-btn next">&#10095;</a>
+
+        <div class="carousel">
+            <div class="carousel-item" id="slide-1">
+                <img src="" alt="Mountain View">
+                <div class="caption">Beautiful Mountains</div>
+            </div>
+            <div class="carousel-item" id="slide-2">
+                <img src="https://picsum.photos/id/1015/800/400" alt="River Valley">
+                <div class="caption">Serene Valley</div>
+            </div>
+            <div class="carousel-item" id="slide-3">
+                <img src="https://picsum.photos/id/1016/800/400" alt="Autumn Forest">
+                <div class="caption">Autumn Woods</div>
+            </div>
         </div>
     </div>
 </section>
