@@ -19,19 +19,23 @@
         .nav-links {
             list-style: none;
             display: flex;
-           gap:83px;
+           gap:383px;
             align-items: center;
             
         }
-        .nav-item a {
+        .nav-item{
             color: #e0f2f1;
             text-decoration: none;
-         
+            color: rgb(220, 240, 239);
             font-weight: 500;
-            font-size:25px;
+            font-size:44px;
             border-radius: 4px;
-        
         }
+        a{
+            text-decoration: none;
+            color: rgb(220, 240, 239);
+        }
+        
         .nav-item a:hover { 
             background-color: #356964;
             padding:9px;
@@ -44,19 +48,23 @@
         background-color: #47807f;
         padding:12px;
         border-radius:3px;
+        font-size:22px;
         }
-        a{
+         .alink{
             text-decoration:none;
+            font-size:33px;
             color:rgb(220, 240, 239);
-            font-size:22px;
+           
         }
         video {
-            width: 90%;
+            width: 60%;
             border-radius: 8px;
             margin-top: 15px;
              padding:12px;
             box-shadow: 1px 2px 8px rgba(71, 122, 109, 0.719);
+          
         }
+       
         
  </style>
     </head>
@@ -70,15 +78,15 @@
     </ul>
 </nav>
 <section id="Learning-outcomes">
-    <h2>In link Format</h2>
+<h2>In  Link Format</h2>
     <div class="outcomes-links">
-        <a href="animation-property.html">Animation using CSS</a><br>
-        <a href="grid-layout.html"> Making a grid layout format</a><br>
-        <a href="student-registrations.html">Student Registration Form </a>
+        <a  class="alink" href="grid-layout.html"> Making a grid layout format</a><br>
+       <a class="alink" href="student-registrations.html">Student Registration Form </a><br>
+         <a class="alink" href="animation-property.html">Animation using CSS</a><br>
     </div>
     <div class="video-format">
         <h2>In video Format</h2>
-        <div class="videos-reult">
+        <div class="videos-result">
             <video controls>
             <source src="My-cal-reult.mp4" type="video/mp4">
             </video>
@@ -88,25 +96,8 @@
         </div> 
     </div>
     
-    <div class="carousel-wrapper">
-        <a href="#slide-3" class="nav-btn prev">&#10094;</a>
-        <a href="#slide-2" class="nav-btn next">&#10095;</a>
-
-        <div class="carousel">
-            <div class="carousel-item" id="slide-1">
-                <img src="" alt="Mountain View">
-                <div class="caption">Beautiful Mountains</div>
-            </div>
-            <div class="carousel-item" id="slide-2">
-                <img src="https://picsum.photos/id/1015/800/400" alt="River Valley">
-                <div class="caption">Serene Valley</div>
-            </div>
-            <div class="carousel-item" id="slide-3">
-                <img src="https://picsum.photos/id/1016/800/400" alt="Autumn Forest">
-                <div class="caption">Autumn Woods</div>
-            </div>
-        </div>
-    </div>
+  
+    
 </section>
  </body>
     </html>
