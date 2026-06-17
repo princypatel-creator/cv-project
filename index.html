@@ -17,18 +17,23 @@
             padding: 20px;
             display:flex;
             justify-content: center;
-          
-           
-          
+        }
+        h2{
+            color:#063c6e;
+        }
+        h3{
+            color:rgba(36, 79, 119, 0.849);
+            font-family:cursive;
         }
         .container {
             width: 850px;
-            background: #ffffff;
+            background: hsl(206, 38%, 85%);
             padding:12px;
             border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             display: grid;
+          
             grid-template-columns: 1.8fr 1.2fr;
             
         }
@@ -119,6 +124,51 @@
             border-radius:3px;
            
         }
+        .social-links {
+            display: flex;
+            gap: 12px;
+            margin-top: 12px;
+          
+        }
+        .social-icon {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #ffffff;
+            color: #053969;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+        }
+        .social-icon:hover {
+            background: #9bc230;
+            color: #ffffff;
+        }
+        .social-icon .tooltip {
+            position: absolute;
+            left: 50%;
+            bottom: calc(100% + 8px);
+            transform: translateX(-50%);
+            white-space: nowrap;
+            background: rgba(0,0,0,0.85);
+            color: #ffffff;
+            padding: 6px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.18s ease, visibility 0.18s ease;
+            pointer-events: none;
+            z-index: 1;
+        }
+        .social-icon:hover .tooltip {
+            opacity: 1;
+            visibility: visible;
+        }
     </style>
     </head>
     <body>
@@ -175,7 +225,7 @@
                  </section>
                  <section><h3>Mini Projects</h3>
                     <hr class="divider"><br>
-                    <a class="mini-proj" href="mini-projects.html">Click here to know my projects</a>
+                   <a class="mini-proj" href="mini-projects.html">Click here to know my projects</a>
                 </section>
              </div>
              <div class="sidebar">
@@ -183,6 +233,22 @@
         <div class="sidebar-section">
           <div class="sidebar-content"> 
            <img class="img" src="cv photo1.jpg">
+
+            <div class="contact">
+                <h2>Contact</h2>
+             <hr class="divider">
+             <div class="social-links">
+                <a class="social-icon linkedin" href="https://www.linkedin.com/in/princypatelb321" target="_blank" rel="noopener noreferrer">
+                    <span class="icon">in</span>
+                    <span class="tooltip">LinkedIn: linkedin.com/in/princypatelb321</span>
+                </a>
+                <a class="social-icon github" href="https://github.com/princypatel-creator" target="_blank" rel="noopener noreferrer">
+                    <span class="icon">GH</span>
+                    <span class="tooltip">GitHub: github.com/princypatel-creator</span>
+                </a>
+             
+             </div>
+            </div>
           <h2>Key Achievements</h2>
           <hr class="divider">
           <p class="achieve-para">
@@ -235,11 +301,7 @@
                 <h5>[Intern at ChiPi Techonlogies]</h5>
                 <p>Completing my training covering with modern frontend technologies and best practices. We made projects based on the live problem solving.</p>
             </div>
-            <div class="contact">
-                <h2>Contact</h2>
-             <hr class="divider">
-             
-            </div>
+           
         </div>
      </div>
     
