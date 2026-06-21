@@ -91,8 +91,69 @@ ga<!DOCTYPE html>
         .images-group{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-          row-gap:10px;
-          column-gap:px;
+            row-gap:10px;
+            column-gap:12px;
+        }
+
+        .videos-result{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            padding: 12px;
+        }
+
+        .videos-result video{
+            width: 100%;
+            height: auto;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .nav-links{
+                gap: 12px;
+                padding: 10px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .nav-item{
+                font-size: 18px;
+            }
+
+            #Learning-outcomes{
+                margin-top: 90px;
+                padding-top: 10px;
+            }
+
+            .outcomes-links{
+                font-size: 18px;
+            }
+
+            .alink{
+                font-size: 18px;
+            }
+
+            .images-group{
+                grid-template-columns: 1fr;
+                column-gap: 0;
+            }
+
+            .projects1{
+                font-size: 18px;
+            }
+
+            .videos-result{
+                grid-template-columns: 1fr;
+            }
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+
+            h1{
+                font-size: 48px;
+            }
         }
         .img-item{
             display: flex;

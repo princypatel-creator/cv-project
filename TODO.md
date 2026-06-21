@@ -1,0 +1,4 @@
+- [ ] Add responsive CSS to `index.html` (container max-width, mobile grid stacking)
+- [ ] Add media queries for tablet/mobile breakpoints to reduce typography and sidebar spacing
+- [ ] Ensure images scale on mobile (max-width: 100%)
+- [ ] Quick manual test: open in browser, check common mobile widths

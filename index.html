@@ -26,7 +26,8 @@
             font-family:cursive;
         }
         .container {
-            width: 850px;
+            width: 100%;
+            max-width: 850px;
             background: hsl(206, 38%, 85%);
             padding:12px;
             border-radius: 20px;
@@ -169,6 +170,54 @@
             opacity: 1;
             visibility: visible;
         }
+        /* Make images scale down on small screens */
+        img { max-width: 100%; height: auto; }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            body {
+                padding: 12px;
+            }
+
+            .container {
+                padding: 10px;
+                border-radius: 16px;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+
+            .sidebar-section {
+                margin-left: 0;
+                padding: 10px;
+            }
+
+            .job-header {
+                flex-direction: column;
+                gap: 6px;
+            }
+
+            .summary-text {
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .container {
+                padding: 8px;
+                border-radius: 14px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            ul li {
+                font-size: 14px;
+            }
+        }
     </style>
     </head>
     <body>
@@ -231,8 +280,8 @@
              <div class="sidebar">
        <!-- This is a sidebar [right] section column -->
         <div class="sidebar-section">
-          <div class="sidebar-content"> 
-           <img class="img" src="cv photo1.jpg">
+          <div class="sidebar-content">
+           <img class="img" src="cv photo1.jpg" alt="Profile photo">
 
             <div class="contact">
                 <h2>Contact</h2>
@@ -251,9 +300,9 @@
             </div>
           <h2>Key Achievements</h2>
           <hr class="divider">
-          <p class="achieve-para">
-            <img class="img1" src="success.png">Developed responsive web interfaces using and modern CSS frameworks.<br> <img class="img1" src="success.png">Built reusable frontend components that improved development efficiency.
-            <br> <img class="img1" src="success.png">Enhanced website responsiveness across desktop, tablet, and mobile devices.<br> <img class="img1" src="success.png">Make some mini projects like registration form.</p>
+            <p class="achieve-para">
+            <img class="img1" src="success.png" alt="Achievement icon">Developed responsive web interfaces using and modern CSS frameworks.<br> <img class="img1" src="success.png" alt="Achievement icon">Built reusable frontend components that improved development efficiency.
+            <br> <img class="img1" src="success.png" alt="Achievement icon">Enhanced website responsiveness across desktop, tablet, and mobile devices.<br> <img class="img1" src="success.png" alt="Achievement icon">Make some mini projects like registration form.</p>
             <br>
             <div class="skill-group"><h2>Skills</h2>
             <hr class="divider">
@@ -280,7 +329,7 @@
                 <h2>Education</h2>
                 <hr class="divider">
                 <h4>BCA-[Integral Unniversity]</h4><strong>Status: </strong><em>Pursing</em><br>
-                <strong>Curent Semester: </strong><em>2nd Completed</em>
+                <strong>Curent Semester:</strong><em> 4th Semester</em>
             </div>
             <br>
             <div class="certificates-group">
