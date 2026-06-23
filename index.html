@@ -3,359 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Frontend Developer</title>
+    <title>Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        :root{
+            --primary-color:#405539;
         }
-
-        body {
-            background-color: #f0f2f5;
-            padding: 20px;
-            display:flex;
-            justify-content: center;
+        body{
+            margin:0%;
+            padding:0%;
+            background-color:#405539;
         }
-        h2{
-            color:#d1dae2;
-        }
-        h3{
-            color:rgba(36, 79, 119, 0.849);
-            font-family:cursive;
-        }
-        .container {
-            width: 100%;
-            max-width: 850px;
-            background: hsl(206, 38%, 85%);
-            padding:12px;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            display: grid;
-          
-            grid-template-columns: 1.8fr 1.2fr;
-            
-        }
-        section{
-        margin-top:12px;
-        }
-        h1{
-            font-size: 47px;
-        }
-     .divider {
-         border: none;
-         height: 4px;   
-         margin-bottom: 2px;          
-         background-color: #9bc230;  
-}
-      .summary-text {
-            font-size: 14x;
-            color: #271e1e;
-            text-align: justify;
-        }
-       .job-header {
-            display: flex;
-            justify-content: space-between;
-            font-size: 13px;
-             font-weight: bold;
-            color: #222222;
-        }
-      ul {
-            padding-left: 16px;
-        }
-
-        ul li {
-             
-            font-size: 14.5px;
-            color: #201d1d;
-           margin-bottom: 4px;
-        }
-        .lang-line{
-            font-size:15px;
-        }
-        .sidebar-section{
-            text-align:justify;
-             padding:12px;
-            margin-left:23px;
-            background-color:#053969;
-            color:#f0f2f5;
-        }
-        .sidebar-content{
-            padding: 11px;
-            margin-left:12px;
-
-        }
-        .achieve-para{
-            padding-top:5px;
-            text-align:justify;
-        }
-        .skill-group ul li {
-            color: #ffffff;
-            font-size: 12px;
-            list-style-type: none;
-            display: inline-block;
-            background: rgba(255,255,255,0.15);
-            padding: 3px 8px;
-            border-radius: 4px;
-            margin: 2px;
-        }
-        .img1{
-            height:41%;
-            width:6%;
-        }
-        .certi ul li{
-            color:#ffffff;
-            background-color:#99b6ca5e;
-            border-radius:4px;
-            padding:4px;
-         margin-top:6px;
-        }
-        .img{
-            width:90%;
-            height:60%;
-            border:3px solid rgb(18, 84, 114);
-            border-radius:20%;
-        }
-        .mini-proj{
-            text-decoration:none;
-            color:rgb(2, 24, 2);
-            font-weight: bold;
-            background-color:  rgb(170, 207, 224);
-            padding:3px;
-            border-radius:3px;
+        .nav-bar{
+           display:flex;
+           gap:8rem;
+           width:90%;
+           place-items:center;
+           justify-content:center;
            
         }
-        .social-links {
-            display: flex;
-            gap: 12px;
-            margin-top: 12px;
-          
+        .navs{
+            display:inline-flex;
+            place-items: center;
+            gap:6rem;
+            border-radius: 3rem;
+            outline:2px solid rgb(182, 162, 129,0.4);
+            padding:1rem;
         }
-        .social-icon {
-            position: relative;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: #ffffff;
-            color: #053969;
-            text-decoration: none;
-            font-weight: bold;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+        .navs a{
+            text-decoration:none;
+            color:white;
+            font-size:18px;
         }
-        .social-icon:hover {
-            background: #9bc230;
-            color: #ffffff;
+        h2{
+            font-size:3rem;
         }
-        .social-icon .tooltip {
-            position: absolute;
-            left: 50%;
-            bottom: calc(100% + 8px);
-            transform: translateX(-50%);
-            white-space: nowrap;
-            background: rgba(0,0,0,0.85);
-            color: #ffffff;
-            padding: 6px 10px;
-            border-radius: 4px;
-            font-size: 12px;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.18s ease, visibility 0.18s ease;
-            pointer-events: none;
-            z-index: 1;
+        a:hover{
+            background-color:rgb(34, 71, 3);
+            padding:5px;
+            border-radius:3px;
         }
-        .social-icon:hover .tooltip {
-            opacity: 1;
-            visibility: visible;
+        .hom{
+            font-size:2rem;
+            display:none;
+            position:relative;
         }
-        /* Make images scale down on small screens */
-        img { max-width: 100%; height: 50%; }
-
-        /* Mobile responsiveness */
-        @media (max-width: 768px) {
-            body {
-                padding: 12px;
+        .homes{
+            display:none;
+            margin-top:14rem;
+            margin-left:22rem;
+            height:11rem;
+            width:7.8rem;
+            border-radius:2rem;
+            outline:2px solid rgb(235, 243, 235,0.2);
+            background-color:rgb(2, 49, 2);
+        }
+        .list-options{
+            list-style-type: none;
+            color:white;
+            margin-left:-26px;
+        }
+        @media screen and (max-width:480px){
+            .navs{
+                display:none;
             }
-
-            .container {
-                padding: 10px;
-                border-radius: 16px;
-                grid-template-columns: 1fr 1fr;
-            }
-
-            h1 {
-                font-size: 34px;
-            }
-
-            .sidebar-section {
-                margin-left: 0;
-                padding: 10px;
-            }
-
-            .job-header {
-                flex-direction: column;
-                gap: 6px;
-            }
-
-            .summary-text {
-                text-align: left;
-            }
+            .hom{display:block;
+            position:relative;}
+            h2{font-size:2.3rem;}
+           
+            .homes{
+            display:absolute;
+            margin-top:14rem;
+            margin-left:22rem;
+            height:11rem;
+            width:7.8rem;
+            border-radius:2rem;
+            outline:2px solid rgb(235, 243, 235,0.2);
+            background-color:rgb(2, 49, 2);
         }
 
-        @media (max-width: 420px) {
-            .container {
-                padding: 8px;
-                border-radius: 14px;
-            }
-
-            h1 {
-                font-size: 30px;
-            }
-
-            ul li {
-                font-size: 14px;
+            .hom:hover .homes{
+                display:block;
             }
         }
     </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="main-content">
-                <h1>PRINCY PATEL</h1>
-               <h2>Frontend Developer Intern|Web Designer</h2>
-               <span>📞 +91 7839987254</span>
-                <span>📧 patelprin9605@gmail.com</span>
-                <span>📍 Raebareli,Uttar Pradesh</span>
-           
-             <section class="summary">
-                <h2>Summary</h2>
-                <hr class="divider">
-                <p class="summary-text">
-                Passionate and motivated Frontend Developer Intern currently working at <strong>Chipi Technologies</strong>, with hands-on experience developing responsive and user-friendly web applications using HTML, CSS, JavaScript, Bootstrap, and Tailwind CSS. Skilled in creating reusable UI components and responsive designs. 
-                Strong understanding of modern frontend development practices, version control using Git/GitHub, and collaborative software development workflows. <br>Seeking opportunities to contribute technical expertise and grow as a frontend developer.</p>
-             </section>
-             <section class="experience">
-                    <h2>Experience</h2>
-                  <hr class="divider">
-                   <h3 >Frontend Developer Intern</h3>
-                 <div class="job-header">
-                 <span>ChiPi Ttechnologies-Kolkata</span>
-                    <span>[Start Date] – Present</span>
-                 </div><br>
-                  <ul>
-                    <li>Develop and maintain responsive web applications using  JavaScript, HTML5, and CSS3.</li>
-                    <li>Build reusable and scalable UI components to improve development efficiency.</li>
-                    <li>Collaborate with designers and developers to implement modern and user-friendly interfaces.</li>
-                    <li>Create mobile-first responsive layouts using Bootstrap and Tailwind CSS.</li>
-                    <li>Optimize application performance, accessibility, and cross-browser compatibility.</li>
-                    <li>Use Git and GitHub for version control and team collaboration.</li>
-                  </ul>
-             </section>
-              <section class="projects-main">
-                <h2>Projects</h2>
-                <hr class="divider">
-                    <h3>Protfolio</h3>
-                    <p class="sub-content">HTML | CSS | Bootstrap</p>
-                    <p class="potfoilo-summary">Designed and developed a personal portfolio website.
-                    Implemented responsive layouts and modern UI/UX practices using bootstrap framework.
-                    </p>
-                 </section>
-                 <section class="languages">
-                    <h2>Languages</h2>
-                    <hr class="divider">
-                    <p class="lang-line">English <br>Hindi</p>
-                 </section>
-                 <section class="intrest">
-                    <h2>Interests</h2>
-                    <hr class="divider">
-                    <p>Frontend Developer, UI/UX Design, Mobile App Development, Cyber security</p>
-                 </section>
-                 <section><h3>Mini Projects</h3>
-                    <hr class="divider"><br>
-                   <a class="mini-proj" href="mini-projects.html">Click here to know my projects</a>
-                </section>
-             </div>
-             <div class="sidebar">
-       <!-- This is a sidebar [right] section column -->
-        <div class="sidebar-section">
-          <div class="sidebar-content">
-           <img class="img" src="cv-photo.jpg" alt="Profile photo">
-
-            <div class="contact">
-                <h2>Contact</h2>
-             <hr class="divider">
-             <div class="social-links">
-                <a class="social-icon linkedin" href="https://www.linkedin.com/in/princypatelb321" target="_blank" rel="noopener noreferrer">
-                    <span class="icon">in</span>
-                    <span class="tooltip">LinkedIn: linkedin.com/in/princypatelb321</span>
-                </a>
-                <a class="social-icon github" href="https://github.com/princypatel-creator" target="_blank" rel="noopener noreferrer">
-                    <span class="icon">GH</span>
-                    <span class="tooltip">GitHub: github.com/princypatel-creator</span>
-                </a>
-             
-             </div>
-            </div>
-          <h2>Key Achievements</h2>
-          <hr class="divider">
-            <p class="achieve-para">
-            <img class="img1" src="success.png" alt="Achievement icon">Developed responsive web interfaces using and modern CSS frameworks.<br> <img class="img1" src="success.png" alt="Achievement icon">Built reusable frontend components that improved development efficiency.
-            <br> <img class="img1" src="success.png" alt="Achievement icon">Enhanced website responsiveness across desktop, tablet, and mobile devices.<br> <img class="img1" src="success.png" alt="Achievement icon">Make some mini projects like registration form.</p>
-            <br>
-            <div class="skill-group"><h2>Skills</h2>
-            <hr class="divider">
-            <h4>Fronted Development</h4>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript (ES6+)</li>
-                   <li>Node.js</li>
-                </ul>
-                <h4>Frameworks &Libraries</h4>
-               <ul>
-                 <li>Bootstrap</li>
-                  <li>Tailwind CSS</li>
-               </ul>
-               <h4>Programming Languages</h4>
-               <ul>
-                 <li>Java</li>
-                 <li>C++</li>
-               </ul>
-            </div>
-            <br>
-            <div class="education-gruop">
-                <h2>Education</h2>
-                <hr class="divider">
-                <h4>BCA-[Integral Unniversity]</h4><strong>Status: </strong><em>Pursing</em><br>
-                <strong>Curent Semester:</strong><em> 4th Semester</em>
-            </div>
-            <br>
-            <div class="certificates-group">
-                <h2>Certificates</h2>
-                <hr class="divider">
-                <h4>Present on Linkedin</h4>
-                <div class="certi">
-                    <ul>
-                        <li>Google Cloud and Security</li>
-                        <li>Young Professional-Skills</li>
-                    </ul>
-                </div>
-            </div> <br>
-            <div class="traning">
-                <h2>Training/Courses</h2>
-                <hr class="divider">
-                <h4>Fontend Development</h4>
-                <h5>[Intern at ChiPi Techonlogies]</h5>
-                <p>Completing my training covering with modern frontend technologies and best practices. We made projects based on the live problem solving.</p>
-            </div>
-           
-        </div>
+</head>
+<body>
+    <nav class="nav-bar">
+     <div class="intro-name"><h2>Princy Patel</h2></div>
+     <div class="navs">
+        <a href="index.html">HOME</a>
+        <a href="index1.html">PROJECT1</a>
+        <a href="index.html">PROJECT2</a>
+        <a href="index.html">PROJECT3</a>
      </div>
-    
-    </div>
-    </body>
+     <div class="hom"><a ><i class="fa-solid fa-house"></i></a></div>
+     <div class="homes">
+        <ul class="list-options">
+            <li><a>HOME</a></li><br>
+            <li><a>PROJECTS1</a></li><br>
+            <li><a>PROJECTS2</a></li><br>
+            <li><a>PROJECTS3</a></li><br>
+        </ul>
+     </div>
+    </nav>
+</body>
 </html>
