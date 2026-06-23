@@ -1,173 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        :root{
-            --primary-color:#405539;
+        :root {
+            --primary-color: #405539;
         }
-        body{
-            margin:0%;
-            padding:0%;
-            background-color:#405539;
+
+        body {
+            margin: 0%;
+            padding: 0%;
+            background-color: #405539;
         }
-        .nav-bar{
-           display:flex;
-           gap:8rem;
-           width:90%;
-           position:fixed;
-           z-index:100;
-           margin-top:-11rem;
-           place-items:center;
-           justify-content:center;
-           
-        }
-        .navs{
-            display:inline-flex;
+
+        .nav-bar {
+            display: flex;
+            gap: 8rem;
+            width: 90%;
+            position: fixed;
+            z-index: 100;
+            margin-top: -11rem;
             place-items: center;
-            gap:6rem;
+            justify-content: center;
+
+        }
+
+        .navs {
+            display: inline-flex;
+            place-items: center;
+            gap: 6rem;
             border-radius: 3rem;
-            outline:2px solid rgb(182, 162, 129,0.4);
-            padding:1rem;
+            outline: 2px solid rgb(182, 162, 129, 0.4);
+            padding: 1rem;
         }
-        .navs a{
-            text-decoration:none;
-            color:white;
-            font-size:18px;
+
+        .navs a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
         }
-        h2{
-            font-size:3rem;
+
+        h2 {
+            font-size: 3rem;
         }
-        a:hover{
-            background-color:rgb(34, 71, 3);
-            padding:5px;
-            border-radius:3px;
+
+        a:hover {
+            background-color: rgb(34, 71, 3);
+            padding: 5px;
+            border-radius: 3px;
         }
-        .hom{
-            font-size:2rem;
-            display:none;
-            position:relative;
+
+        .hom {
+            font-size: 2rem;
+            display: none;
+            position: relative;
         }
-        .homes{
-            display:none;
-            margin-top:14rem;
-            margin-left:22rem;
-            height:11rem;
-            width:7.8rem;
-            border-radius:2rem;
-            outline:2px solid rgb(235, 243, 235,0.2);
-            background-color:rgb(2, 49, 2);
+
+        .homes {
+            display: none;
+            position: absolute;
+            margin-top: 14rem;
+            margin-left: 22rem;
+            height: 11rem;
+            width: 7.8rem;
+            border-radius: 2rem;
+            outline: 2px solid rgb(235, 243, 235, 0.2);
+            background-color: rgb(2, 49, 2);
         }
-        .list-options{
+
+        .list-options {
             list-style-type: none;
-            color:white;
-            margin-left:-26px;
+            color: white;
+            margin-left: -26px;
         }
+
         .container {
-       margin-top: 10rem;
-    background-color: transparent;
-    margin-left: 4rem;
-    width: 90%;
-    border: 2px solid rgb(230, 238, 230);
-    box-shadow: -1px -4px 17px white;
-    border-radius: 3rem;
-    place-items: center;
-    justify-content: center;
-    padding-bottom: 3rem;
+            margin-top: 10rem;
+            margin-left: 4rem;
+            max-width: 90%;
+            border: 2px solid rgb(230, 238, 230);
+            box-shadow: -1px -4px 17px white;
+            border-radius: 3rem;
+            place-items: center;
+            justify-content: center;
+            padding-bottom: 3rem;
         }
+
         .sub-container {
-    display: inline-flex;
-    width: 85%;
-    justify-content: center;
-    place-items: center;
+            display: inline-flex;
+            width: 85%;
+            margin-top: 2rem;
+            justify-content: center;
+            place-content: center;
         }
+
         .photo-conta {
-    width: 346px;
-    height: 280px;
-    background-color: rgb(20, 39, 16);
-    background-image: url(cv-photo.png);
-    background-size: cover;
-    outline: 3px solid rgb(0, 59, 0);
-    box-shadow: 4px -2px 31px 11px rgb(16, 48, 16);
-    border-radius: 70% 30% 41% 59% / 54% 63% 37% 46%;
+            width: 346px;
+            height: 280px;
+            margin-left: 1rem;
+            background-color: rgb(20, 39, 16);
+            background-image: url(cv-photo.png);
+            background-size: cover;
+            outline: 3px solid rgb(0, 59, 0);
+            box-shadow: 4px -2px 31px 11px rgb(16, 48, 16);
+            border-radius: 70% 30% 41% 59% / 54% 63% 37% 46%;
         }
-        .verti-line{
-    border-right: 4px solid rgb(41, 25, 25);
-    width: 2px;
-    height: 322px;
-    margin: 2px 12px;
+
+        .verti-line {
+            border-right: 4px solid rgb(41, 25, 25);
+            width: 2px;
+            height: 322px;
+            margin: 2px 12px;
         }
+
         h1 {
-    font-size: 3rem;
-}
-h1, h3 {
-    color: white;
-}
-    .head1 {
-    margin-left: 9rem;
-    font-size: 4rem;
-    margin-top: -16px;
-    color: #926250;
-    }
-    .highlight {
-    color: rgb(140, 175, 84);
-    font-size: 2.3rem;
-    }
-    .about {
-    margin-top: 2rem;
-    width: 85%;
-    place-items: center;
-    justify-content: center;
-    }
-    .about-section {
-    font-size: 2rem;
-    width: 70%;
-    height: auto;
-    background-color: rgba(182, 162, 129, 0.575);
-    border-radius: 3rem;
-    padding: 2rem;
-    color: rgb(122, 76, 7);
-    font-family: "Story Script", sans-serif;
-    }
+            font-size: 3rem;
+        }
+
+        h1,
+        h3 {
+            color: white;
+        }
+
+        .head1 {
+            margin-left: 9rem;
+            font-size: 4rem;
+            margin-top: -16px;
+            color: #926250;
+        }
+
+        .highlight {
+            color: rgb(140, 175, 84);
+            font-size: 2.3rem;
+        }
+
+        .about {
+            margin-top: 2rem;
+            width: 85%;
+            place-items: center;
+            justify-content: center;
+        }
+
+        .about-section {
+            font-size: 2rem;
+            width: 70%;
+            height: auto;
+            text-align: justify;
+            border-radius: 3rem;
+            padding: 2rem;
+            color: rgb(236, 234, 231);
+            font-family: "Sour Gummy", sans-serif;
+        }
+
+        .cont-section {
+            display: flex;
+            gap: 3rem;
+            place-content: center;
+            justify-content: center;
+        }
+
+        .icons {
+            font-size: 4rem;
+            color: black;
+            border-radius: 0.6rem;
+            box-shadow: 2px 1px 18px -2px white;
+        }
+
+        /*media query section*/
+        @media screen and (max-width:480px) {
+
+            /* nav-bar*/
+            .navs {
+                display: none;
+            }
+
+            .hom {
+                display: block;
+            }
+
+            .nav-bar {
+                justify-content: space-evenly;
+                color: white;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .hom:hover+.homes {
+                display: block;
+            }
+
+            /* now adjust the container section*/
+            .container {
+                margin-left: 1rem;
+                place-content: center;
+            }
+
+            .sub-container {
+                display: block;
+            }
+
+            .verti-line {
+                display: none;
+            }
+
+            .photo-conta {
+                margin-top: 1rem;
+                width: 97%;
+            }
+
+            .main-highlight {
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .head1 {
+                margin-left: 0px;
+                font-size: 2rem;
+            }
 
 
-      
+        }
     </style>
 </head>
+
 <body>
     <nav class="nav-bar">
-     <div class="intro-name"><h2>Princy Patel</h2></div>
-     <div class="navs">
-        <a href="index.html">HOME</a>
-        <a href="index1.html">PROJECT1</a>
-        <a href="index.html">PROJECT2</a>
-        <a href="index.html">PROJECT3</a>
-     </div>
-     <div class="hom"><a ><i class="fa-solid fa-house"></i></a></div>
-     <div class="homes">
-        <ul class="list-options">
-            <li><a>HOME</a></li><br>
-            <li><a>PROJECTS1</a></li><br>
-            <li><a>PROJECTS2</a></li><br>
-            <li><a>PROJECTS3</a></li><br>
-        </ul>
-     </div>
+        <div class="intro-name">
+            <h2>Princy Patel</h2>
+        </div>
+        <div class="navs">
+            <a href="index.html">HOME</a>
+            <a href="index1.html">PROJECT1</a>
+            <a href="index.html">PROJECT2</a>
+            <a href="index.html">PROJECT3</a>
+        </div>
+        <div class="hom"><a><i class="fa-solid fa-house"></i></a></div>
+        <div class="homes">
+            <ul class="list-options">
+                <li><a>HOME</a></li><br>
+                <li><a>PROJECTS1</a></li><br>
+                <li><a>PROJECTS2</a></li><br>
+                <li><a>PROJECTS3</a></li><br>
+            </ul>
+        </div>
     </nav>
     <div class="container">
         <div class="sub-container">
             <div class="photo-conta"></div>
             <div class="verti-line"></div>
-            <div> <h1>Hii.<br><span>Princy Patel</span></h1>
-            <h1 class="head1">Front-End Developer</h1> <h3>Intern at<br><span class="highlight">ChiPi Technlogies</span></h3>
+            <div class="main-highlight">
+                <h1>Hii.<br><span>Princy Patel</span></h1>
+                <h1 class="head1">Front-End Developer</h1>
+                <h3>Intern at<br><span class="highlight">ChiPi Technlogies</span></h3>
             </div>
         </div>
-        <div class="about"><h1>ABOUT ME:</h1> <p class="about-section">"Hii there! I'am passionate Front-End Developer Intern at ChiPi Technlogies and a student of Integral University. My developer toolkit focuses heavily on crafting beautiful, responsive layouts using Html and CSS.I have a deep understanding of various CSS libraries, allowing me to build and style web applications efficiently. I love turning design concepts into seamless digital experiences ,and enjoying the journey of learning phase. I hope i will gain more knowledge during the internship phase and get experienced through the company environment. </p></div>
-    </div>
+        <div class="about">
+            <h1>ABOUT ME:</h1>
+            <p class="about-section">"Hii there! I'am passionate Front-End Developer Intern at ChiPi Technlogies and a
+                student of Integral University. My developer toolkit focuses heavily on crafting beautiful, responsive
+                layouts using Html and CSS.I have a deep understanding of various CSS libraries, allowing me to build
+                and style web applications efficiently.<br> I love turning design concepts into seamless digital
+                experiences
+                ,and enjoying the journey of learning phase. I hope i will gain more knowledge during the internship
+                phase and get experienced through the company environment. </p>
+        </div>
+        <div class="contact">
+            <h1>CONTANCT ME:</h1>
+
+            <div class="cont-section">
+                <div><a class="icons" href="https://github.com/princypatel-creator" target="_blank"><i
+                            class="fa-brands fa-square-github"></i></a></div>
+                <div><a class="icons" href="https://www.linkedin.com/in/princypatelb321" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a></div>
+            </div>
+        </div>
 </body>
+
 </html>
