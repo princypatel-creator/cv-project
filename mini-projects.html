@@ -1,262 +1,274 @@
-ga<!DOCTYPE html>
+ga
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>learning outcomes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
     <style>
         .navbar {
             background-color: #038b89;
-            width:100vw;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            width: 100%;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-           position:fixed;
+            position: fixed;
             top: 0;
+
             z-index: 1000;
         }
+
         .nav-links {
-            list-style: none;
+
             display: flex;
-           gap:843px;
             align-items: center;
-            
+            justify-content: space-evenly;
+
         }
-        .nav-item{
+
+        .nav-item {
             color: #e0f2f1;
             text-decoration: none;
             color: rgb(220, 240, 239);
             font-weight: 500;
-            font-size:34px;
+            font-size: 34px;
             border-radius: 4px;
         }
-        a{
+
+        a {
             text-decoration: none;
             color: rgb(220, 240, 239);
         }
-        
-        .nav-item a:hover { 
+
+        .nav-item a:hover {
             background-color: #356964;
-            padding:9px;
-            text-decoration: none;     
+            padding: 9px;
+            text-decoration: none;
         }
-        body{
+
+        body {
             background-color: #356964;
         }
-        .outcomes-links{
-        background-color: #47807f;
-        padding:12px;
-        border-radius:3px;
-        font-size:22px;
+
+        .outcomes-links {
+            background-color: #47807f;
+            padding: 12px;
+            border-radius: 3px;
+            font-size: 22px;
         }
-         .alink{
-            text-decoration:none;
-            font-size:33px;
-            color:rgb(220, 240, 239);
-           text-align:center;
-           justify-content: center;
-           display:flex;
+
+        .alink {
+            text-decoration: none;
+            font-size: 33px;
+            color: rgb(220, 240, 239);
+            text-align: center;
+            justify-content: center;
+            display: flex;
         }
-       
-           .video-result{
-            
-    justify-content: center; 
-    align-items: center;   
-    
-    width: 100vw;            
-    height: 100vh;          
-    background-color: #1a1a1a;
-           }
-#Learning-outcomes{
-    margin-top:34px;
-    padding-top:34px;
-}
+
+        .video-result {
+
+            justify-content: center;
+            align-items: center;
+
+            width: 100vw;
+            height: 100vh;
+            background-color: #1a1a1a;
+        }
+
+        #Learning-outcomes {
+            margin-top: 34px;
+            padding-top: 34px;
+        }
+
         h2 {
             font-size: 34px;
             text-align: center;
-            color:aliceblue;
-            font-family:"Kaushan Script", cursive;
-        }
-        img{
-           border:4px solid teal;
-           margin-bottom:3px;
-           width:60%;
-           height:100%;
+            color: aliceblue;
+            text-decoration:underline;
+            font-family: "Kaushan Script", cursive;
         }
 
-        .images-group{
+        img {
+            border: 4px solid teal;
+            margin-bottom: 3px;
+            width: 60%;
+            height: 100%;
+        }
+
+        .images-group {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            row-gap:10px;
-            column-gap:12px;
+            row-gap: 10px;
+            column-gap: 12px;
         }
 
-        .videos-result{
+        .videos-result {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 12px;
             padding: 12px;
         }
 
-        .videos-result video{
+        .videos-result video {
             width: 100%;
             height: auto;
         }
 
         /* Mobile */
         @media (max-width: 768px) {
-            .nav-links{
+            .nav-links {
                 gap: 12px;
                 padding: 10px;
                 flex-wrap: wrap;
                 justify-content: center;
             }
 
-            .nav-item{
+            .nav-item {
                 font-size: 18px;
             }
 
-            #Learning-outcomes{
+            #Learning-outcomes {
                 margin-top: 90px;
                 padding-top: 10px;
             }
 
-            .outcomes-links{
+            .outcomes-links {
                 font-size: 18px;
             }
 
-            .alink{
+            .alink {
                 font-size: 18px;
             }
 
-            .images-group{
+            .images-group {
                 grid-template-columns: 1fr;
                 column-gap: 0;
             }
 
-            .projects1{
+            .projects1 {
                 font-size: 18px;
             }
 
-            .videos-result{
+            .videos-result {
                 grid-template-columns: 1fr;
             }
 
-            img{
+            img {
                 width: 100%;
                 height: auto;
             }
-
-            h1{
-                font-size: 48px;
-            }
         }
-        .img-item{
+
+        .img-item {
             display: flex;
         }
-        img{
-           border:4px solid teal;
-           margin-bottom:3px;
-           width:100%;
-           height:60%;
-           display:block;
-        }
-       .projects1{
-        background-color:aliceblue;
-        padding:12px;
-        font-size:21px;
-       }
 
-       .file-input{
-        background-color: #47807f;
-        padding:9px;
-        border-radius: 4px;
-        color:antiquewhite;
-        font-size:19px;
-       }
-       h1{
-        font-size:98px;
-        font-family:"Carter One", system-ui;
-        text-align:center;
-        text-decoration: underline;
-        color:aliceblue;
-       }
- </style>
-    </head>
- <body>
+        img {
+            border: 4px solid teal;
+            margin-bottom: 3px;
+            width: 100%;
+            height: 60%;
+            display: block;
+        }
+
+        .projects1 {
+            background-color: aliceblue;
+            padding: 12px;
+            font-size: 21px;
+        }
+
+        .file-input {
+            background-color: #47807f;
+            padding: 9px;
+            border-radius: 4px;
+            color: antiquewhite;
+            font-size: 19px;
+        }
+    </style>
+</head>
+
+<body>
     <nav class="navbar">
-    
-    <ul class="nav-links">
-        <li class="nav-item"><a href="index.html">Back to Home</a></li>
-        <li class="nav-item"><a href="#learning-outcomes">Learning Outcomes</a></li>
-        <li class="nav-item btn-highlight"><a href="#mini-projects">Mini Projects</a></li>
-    </ul>
-</nav>
-<section id="learning-outcomes">
-<h2>In  Link Format</h2>
-    <div class="outcomes-links">
-        <a  class="alink" href="grid-layout.html"> Making a grid layout format</a><br>
-       <a class="alink" href="student-registration.html">Student Registration Form </a><br>
-         <a class="alink" href="animation-property.html">Animation using CSS</a><br>
-    </div>
-    <div class="video-format">
-        <h2>In video Format</h2>
-       
-        <div class="videos-result">
-            <video controls>
-            <source src="My-cal-reult.mp4" type="video/mp4">
-            </video>
-            <video controls>
-                <source src="my-video-2.mp4" type="video/mp4">
-            </video>
-        </div> 
-    </div>
-    <h2>Some photos of my learning</h2>
-    <div class="images-group">
-   <div class="img-item"> <img src="photoo1.png" alt="Learning photo 1"></div>
-   <div class="img-item"><img src="photo2.png" alt="Learning photo 2"></div> 
-   <div class="img-item"><img src="photo3.png" alt="Learning photo 3"></div> 
-   <div class="img-item"><img src="photo4.png" alt="Learning photo 4"></div> 
-   <div class="img-item"><img src="photo5.png" alt="Learning photo 5"></div> 
-   <div class="img-item"><img src="photo6.png" alt="Learning photo 6"></div> 
-    </div>
-</section>
-<section id="mini-projects">
-    <h1>PROJECTS</h1>
-    <div class="projects1">
-        <h3>[Prjoect Name]</h3>
-        <p><b>GitHub Repo link:</b><i>https://www.github.com/in/porjects1</i></p>
-        <label for="file"><b>Document of the project:</b></label>
-        <input class="file-input" type="file"><br>
-        <p class="summary-project"> Here the summary of the project is given of which the file is uploaded.<br>
-        <b>Languages Used:</b> <i>[example: HTML,CSS,javascript,other frameworks]</i><br>
-        <b>Challenges Faced:</b><i> There were many challenge like i like to connect all codes and built a proper logic for backend and connect api's to get database.</i><br>
-     <b>What I gain:</b><i>I learnt to face these challenges and how to resolve it and a proper guidance or roadmap made this journey fun.</i></p>
-    </div><br>
-    <div class="projects1">
-        <h3>[Prjoect Name]</h3>
-        <p><b>GitHub Repo link:</b><i>https://www.github.com/in/porjects1</i></p>
-        <label for="file"><b>Document of the project:</b></label>
-        <input class="file-input" type="file"><br>
-        <p class="summary-project"> Here the summary of the project is given of which the file is uploaded.<br>
-        <b>Languages Used:</b> <i>[example: HTML,CSS,javascript,other frameworks]</i><br>
-        <b>Challenges Faced:</b><i> There were many challenge like i like to connect all codes and built a proper logic for backend and connect api's to get database.</i><br>
-     <b>What I gain:</b><i>I learnt to face these challenges and how to resolve it and a proper guidance or roadmap made this journey fun.</i></p>
-    </div><br>
-    <div class="projects1">
-        <h3>[Prjoect Name]</h3>
-        <p><b>GitHub Repo link:</b><i>https://www.github.com/in/porjects1</i></p>
-        <label for="file"><b>Document of the project:</b></label>
-        <input class="file-input" type="file"><br>
-        <p class="summary-project"> Here the summary of the project is given of which the file is uploaded.<br>
-        <b>Languages Used:</b> <i>[example: HTML,CSS,javascript,other frameworks]</i><br>
-        <b>Challenges Faced:</b><i> There were many challenge like i like to connect all codes and built a proper logic for backend and connect api's to get database.</i><br>
-     <b>What I gain:</b><i>I learnt to face these challenges and how to resolve it and a proper guidance or roadmap made this journey fun.</i></p>
-    </div>
-</section>
- </body>
-    </html>
+        <div class="nav-links">
+            <div class="nav-item"><a href="project1.html">HOME</a></div>
+            <div class="nav-item"><a href="#learning-outcomes">RESULTS</a></div>
+            <div class="nav-item"><a href="#mini-projects">MINI PROJECTS</a></div>
+        </div>
+    </nav>
+    <section id="learning-outcomes">
+        <h2>In Link Format</h2>
+        <div class="outcomes-links">
+            <a class="alink" href="grid-layout.html"> Making a grid layout format</a><br>
+            <a class="alink" href="student-registration.html">Student Registration Form </a><br>
+            <a class="alink" href="animation-property.html">Animation using CSS</a><br>
+        </div>
+        <div class="video-format">
+            <h2>In video Format</h2>
+
+            <div class="videos-result">
+                <video controls>
+                    <source src="My-cal-reult.mp4" type="video/mp4">
+                </video>
+                <video controls>
+                    <source src="my-video-2.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <h2>Some photos of my learning</h2>
+        <div class="images-group">
+            <div class="img-item"> <img src="photoo1.png" alt="Learning photo 1"></div>
+            <div class="img-item"><img src="photo2.png" alt="Learning photo 2"></div>
+            <div class="img-item"><img src="photo3.png" alt="Learning photo 3"></div>
+            <div class="img-item"><img src="photo4.png" alt="Learning photo 4"></div>
+            <div class="img-item"><img src="photo5.png" alt="Learning photo 5"></div>
+            <div class="img-item"><img src="photo6.png" alt="Learning photo 6"></div>
+        </div>
+    </section>
+    <section id="mini-projects">
+        <h2>PROJECTS</h2>
+        <div class="projects1">
+            <h3>[Prjoect Name]</h3>
+            <p><b>GitHub Repo link:</b><i>https://www.github.com/in/porjects1</i></p>
+            <label for="file"><b>Document of the project:</b></label>
+            <input class="file-input" type="file"><br>
+            <p class="summary-project"> Here the summary of the project is given of which the file is uploaded.<br>
+                <b>Languages Used:</b> <i>[example: HTML,CSS,javascript,other frameworks]</i><br>
+                <b>Challenges Faced:</b><i> There were many challenge like i like to connect all codes and built a
+                    proper logic for backend and connect api's to get database.</i><br>
+                <b>What I gain:</b><i>I learnt to face these challenges and how to resolve it and a proper guidance or
+                    roadmap made this journey fun.</i>
+            </p>
+        </div><br>
+        <div class="projects1">
+            <h3>[Prjoect Name]</h3>
+            <p><b>GitHub Repo link:</b><i>https://www.github.com/in/porjects1</i></p>
+            <label for="file"><b>Document of the project:</b></label>
+            <input class="file-input" type="file"><br>
+            <p class="summary-project"> Here the summary of the project is given of which the file is uploaded.<br>
+                <b>Languages Used:</b> <i>[example: HTML,CSS,javascript,other frameworks]</i><br>
+                <b>Challenges Faced:</b><i> There were many challenge like i like to connect all codes and built a
+                    proper logic for backend and connect api's to get database.</i><br>
+                <b>What I gain:</b><i>I learnt to face these challenges and how to resolve it and a proper guidance or
+                    roadmap made this journey fun.</i>
+            </p>
+        </div><br>
+        <div class="projects1">
+            <h3>[Prjoect Name]</h3>
+            <p><b>GitHub Repo link:</b><i>https://www.github.com/in/porjects1</i></p>
+            <label for="file"><b>Document of the project:</b></label>
+            <input class="file-input" type="file"><br>
+            <p class="summary-project"> Here the summary of the project is given of which the file is uploaded.<br>
+                <b>Languages Used:</b> <i>[example: HTML,CSS,javascript,other frameworks]</i><br>
+                <b>Challenges Faced:</b><i> There were many challenge like i like to connect all codes and built a
+                    proper logic for backend and connect api's to get database.</i><br>
+                <b>What I gain:</b><i>I learnt to face these challenges and how to resolve it and a proper guidance or
+                    roadmap made this journey fun.</i>
+            </p>
+        </div>
+    </section>
+</body>
+
+</html>
