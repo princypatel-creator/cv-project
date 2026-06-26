@@ -52,12 +52,12 @@
         h2 {
             font-size: 3rem;
         }
-
-        a:hover {
+         a:hover {
             background-color: rgb(34, 71, 3);
             padding: 5px;
             border-radius: 3px;
         }
+       
 
         .hom {
             font-size: 2rem;
@@ -74,7 +74,7 @@
             width: 7.8rem;
             border-radius: 2rem;
             outline: 2px solid rgb(235, 243, 235, 0.2);
-            background-color: rgb(2, 49, 2);
+            background-color: rgb(34, 71, 3);
         }
 
 
@@ -238,10 +238,9 @@
                 margin-left: -26px;
             }
 
-            .list-option a:hover {
-                color: rgb(4, 31, 4);
-                background-color: #698a5e;
-            }
+           .list-item:hover{
+            color: darkgreen;
+           }
 
         }
     </style>
@@ -261,10 +260,10 @@
         <div class="hom"><a><i class="fa-solid fa-house"></i></a></div>
         <div class="homes">
             <ul class="list-option">
-                <li><a href="index.html">HOME</a></li><br>
-                <li><a href="project1.html">PROJECTS1</a></li><br>
-                <li><a href="project2.html">PROJECTS2</a></li><br>
-                <li><a href="project3.html">PROJECTS3</a></li><br>
+                <li><a class="list-item" href="index.html">HOME</a></li><br>
+                <li><a class="list-item" href="project1.html">PROJECT1</a></li><br>
+                <li><a class="list-item" href="project2.html">PROJECT2</a></li><br>
+                <li><a class="list-item" href="project3.html">PROJECT3</a></li><br>
             </ul>
         </div>
     </nav>
@@ -299,5 +298,10 @@
             </div>
         </div>
 </body>
+<script>
+    (function(){
+        alert("Hello! Welcome to my projects during my internship")
+    })();
+</script>
 
 </html>
